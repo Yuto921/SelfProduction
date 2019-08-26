@@ -1,0 +1,394 @@
+.header {
+    background-color: whitesmoke;
+    border-top: 10px solid goldenrod;
+    box-sizing: inherit; 
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo img {
+    width: 160px;
+    height: 70px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+#header-contents {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header-profile,
+#header-life,
+#header-portfolio {
+    cursor: pointer;
+    font-size: 18px;
+    font-style: oblique;
+}
+
+#header-profile:hover,
+#header-life:hover,
+#header-portfolio:hover {
+    opacity: 0.7;
+}
+
+
+.main-img {
+    height: 500px;
+    background-image: url(img/mamba.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font: bold;
+}
+
+#face {
+    height: 440px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-face-img {
+    margin-left: 100px;
+    background-image: url(img/yuto.hisamatsu.jpg);
+    background-position: center;
+    height: 350px;
+    background-color: aqua;
+    border-radius: 50%;
+    font-size: 24px;
+    color: rgb(83, 83, 20);
+    cursor: pointer;
+}
+
+
+
+.main-face-des {
+    margin-left: 100px;
+    background-color: bisque;
+    height: 400px;
+}
+
+.face-row {
+    box-shadow: inset 0 0 15px 15px white;
+    display: none;
+}
+
+.face-row-display {
+    display: flex;
+}
+
+
+
+.main-face-des div .col-12:first-child {
+    text-align: center;
+    font-size: 21px;
+}
+
+.navbar {
+    margin-top: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* 各カード */
+.card {
+    margin-top: 120px;
+}
+
+/* 各カードの中身 */
+.no-gutters {
+    margin: 30px;
+}
+
+.yuto_h.img {
+    height: 60px;
+}
+
+.jc,
+.ryugaku,
+.zemi {
+    height: 150px;
+}
+
+.pos-f-t {
+    position: sticky;
+    top: 0;
+}
+
+.snsNavbar {
+    font-size: 24px;
+    color: white;
+    font: bold;
+    margin-right: 1000px; 
+}
+
+#snsSpan {
+    margin-left: 10px;
+    font-size: 34px;
+    color: darkcyan;
+}
+
+.text-white,
+#snsSpan,
+.text-muted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#baby,
+#elementary,
+#junior,
+#high,
+#hokkaido,
+#spring,
+#sebu,
+#now {
+    padding-top: 50px;
+}
+
+.Portfolio {
+    margin: 51px 0;
+}
+
+#returnBtn button {
+    margin: 60px;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    border: 4px dotted red;
+}
+
+
+.pos-f-t {
+    margin: 100px auto;
+}
+
+.footer-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Portfolio {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cornsilk;
+    padding-top: 60px;
+    filter: drop-shadow(0 0 13px darkorange);
+}
+
+.portfolio-des {
+    z-index: 1;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    padding-bottom: 10px;
+    margin-bottom: 150px;
+    position: sticky;
+    top: 0;
+    border-bottom: 4px solid darkgoldenrod;
+}
+
+.portfolio-des div:last-child {
+    font-size: 21px;
+    opacity: 0.7;
+}
+
+.box-portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.box-img-portfolio {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+
+.box-img-portfolio:last-child {
+    background-color: white;
+}
+
+.box-des-portfolio {
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    font-size: 19px;
+}
+
+
+/* photo gallery */
+
+#photoGallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.photoGallery {
+    font-size: 45px;
+    border-bottom: 3px dotted blue;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.slide {
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 720px;
+    border-color: black; 
+}
+
+.image-box {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.image-box img {
+    max-width: 100%;
+    height: 400px;
+}
+
+.toolbar {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 45px;
+    background-color: darkgrey;
+}
+
+.nav-tool {
+    display: inline-block;
+}
+
+#prev {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-image: url(img/prev.png);
+    cursor: pointer;
+}
+
+#next {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-image: url(img/next.png);
+    cursor: pointer;
+}
+
+#page {
+    display: inline-block;
+    float: left;
+    margin-top: 8px;
+    height: 32px;
+    color: black;
+}
+
+
+/* セブ島　図鑑 */
+.zukan,
+.zukan2 {
+    margin-top: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zukan div:first-child {
+    font-size: 45px;
+    border-bottom: 3px dotted blue;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.zukan video,
+.zukan2 video {
+    width: 800px;
+    height: 700px;
+}
+
+
+.zukan2 div:first-child {
+    font-size: 45px;
+    border-bottom: 3px dotted blue;
+    width: 550px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* footer */
+
+#footer {
+    margin-top: 200px;
+    height: 60px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+#allRight{
+    font-size: 24px;
+}
+
+
+
+
+/*
+ z-index: での優先順位について
+ ビデオのところがうまくいかない
+*/
