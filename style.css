@@ -133,8 +133,10 @@
 }
 
 .pos-f-t {
-    position: sticky;
-    top: 0;
+    height: 600px;
+    margin: 100px auto;
+    /* position: sticky;
+    top: 0; */
 }
 
 .snsNavbar {
@@ -184,9 +186,6 @@
 }
 
 
-.pos-f-t {
-    margin: 100px auto;
-}
 
 .footer-cards {
     display: flex;
@@ -358,6 +357,10 @@
     height: 700px;
 }
 
+.zukan2 video {
+    height: 637px;
+}
+
 
 .zukan2 div:first-child {
     font-size: 45px;
@@ -384,11 +387,3 @@
 #allRight{
     font-size: 24px;
 }
-
-
-
-
-/*
- z-index: での優先順位について
- ビデオのところがうまくいかない
-*/
