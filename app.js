@@ -10,7 +10,7 @@ $(function(){
     });
 
 
-    //一個一個の要素をfadeIn()でスクロール順に表示したい
+    //一個一個の要素をfadeIn()でスクロールに合わせて表示したい
     /*
         $('.nav).each(function(){
             $(this).hide().fadeIn();
@@ -39,6 +39,7 @@ $(function(){
 
 
     $('#returnBtn > button').on('click', function(){
+        // <script> の呼び込みが、 slimだったからスクロールトップが読み込まれてない
         // $('#nav').animate({scrollTop: 0}, 1000); //アニメーションをつけた上でtopscrollを実施したい
         // $('html, body').animate({scrollTop:nav}, 1100);
 
@@ -46,7 +47,7 @@ $(function(){
         // $('html, body').animate({scrollTop: nav});
 
 
-        $('html, body').scrollTop(1100);
+        $('html, body').animate({scrollTop: 0}, 1000);
     });
 
 
