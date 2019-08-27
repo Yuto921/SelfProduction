@@ -59,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 
@@ -79,7 +80,7 @@
 .main-face-des {
     margin-left: 100px;
     background-color: bisque;
-    height: 400px;
+    height: 514px;
 }
 
 .face-row {
