@@ -26,6 +26,31 @@ $(function(){
     //         $(this[i]).classAdd('active');
     //     });
     // });
+    $(window).scroll(function() {
+        let scrollTop = $(window).scrollTop();
+
+        let ids = ['#baby', '#elementary', '#junior', '#high', '#hokkaido', '#spring', '#sebu', '#now'];
+
+        for (id of ids) {
+            // offset()が要素の座標を取得　.topでy座標　.leftでx座標
+            if (scrollTop > $(id).parent().offset().top) {
+                removeAllActiveClass();
+                $('a[href="' + id + '"]').addClass('active');
+            }
+        }
+
+    });
+
+    function removeAllActiveClass() {
+        let activeNodes = $(".active");
+        activeNodes.each(function(){
+            $(this).removeClass("active");
+        });
+    };
+
+    // やってることの意味はわかった。完さんがどのような思考回路でコードを記述したのか知りたい
+    // each と for　のイメージの違い eachは配列ではないものを複数処理するときに使うのか
+
 
     $('#header-profile').on('click', function(){
         $('html, body').scrollTop(580);
