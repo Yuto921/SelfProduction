@@ -32,7 +32,7 @@ $(function(){
         let ids = ['#baby', '#elementary', '#junior', '#high', '#hokkaido', '#spring', '#sebu', '#now'];
 
         for (id of ids) {
-            // offset()が要素の座標を取得　.topでy座標　.leftでx座標
+            // offset()が要素の座標を取得　.topでy座標　.leftでx座標　
             if (scrollTop > $(id).parent().offset().top) {
                 removeAllActiveClass();
                 $('a[href="' + id + '"]').addClass('active');
@@ -48,6 +48,17 @@ $(function(){
         });
     };
 
+    /*
+    やらないといけないこと
+    スクロール検知->アクティブのクラス移動(とりあえず#babyから#elementaryのスパンで考える)(どのタイミング？=スクロールの位置が変わったとき->どのタイミングか＝要素の位置)
+
+        if (scrollTop > $('#baby').parent().offset().top) {
+        removeAllActiveClass();
+        $('a[href="' + id + '"]').addClass('active');
+        }
+        これの繰り返し -> idしか変わってないから配列に入れて、forで回す
+
+    */
     // やってることの意味はわかった。完さんがどのような思考回路でコードを記述したのか知りたい
     // each と for　のイメージの違い eachは配列ではないものを複数処理するときに使うのか
 
