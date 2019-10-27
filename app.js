@@ -67,10 +67,10 @@ $(function(){
         $('html, body').scrollTop(580);
     });
     $('#header-life').on('click', function(){
-        $('html, body').scrollTop(1170);
+        $('html, body').scrollTop(2900);
     });
     $('#header-portfolio').on('click', function(){
-        $('html, body').scrollTop(5550);
+        $('html, body').scrollTop(8055);
     });
 
 
